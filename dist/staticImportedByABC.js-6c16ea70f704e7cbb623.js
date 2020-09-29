@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{13:function(n,o,t){"use strict";t.d(o,"a",(function(){return c}));var c=function(){return console.log("staticImportedByABC")}}}]);

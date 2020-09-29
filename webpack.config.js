@@ -32,6 +32,7 @@ const config = {
     },
     splitChunks: {
       minSize: 0,
+      maxAsyncRequests: Infinity,
       name(module, chunks, cacheGroupKey) {
         const moduleFileName = module
           .identifier()
