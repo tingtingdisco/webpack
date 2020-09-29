@@ -27,7 +27,6 @@ const config = {
     ],
   },
   optimization: {
-    minimize: false,
     runtimeChunk: {
       name: 'runtime',
     },
