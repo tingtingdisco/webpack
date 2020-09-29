@@ -30,6 +30,9 @@ const config = {
     runtimeChunk: {
       name: 'runtime',
     },
+    splitChunks: {
+      minSize: 0,
+    },
   },
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: 'static' })],
 };
