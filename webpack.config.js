@@ -32,6 +32,13 @@ const config = {
     },
     splitChunks: {
       minSize: 0,
+      name(module, chunks, cacheGroupKey) {
+        const moduleFileName = module
+          .identifier()
+          .split('/')
+          .reduceRight((item) => item);
+        return `${moduleFileName}`;
+      },
     },
   },
   plugins: [new BundleAnalyzerPlugin({ analyzerMode: 'static' })],
